@@ -14,5 +14,12 @@ budget.get('/:id', (req, res) => {
     { transaction ? res.status(202).json(budgetData[id]) : res.redirect('*')}
 })
 
+//Create | Post
+budget.post('/',(req, res) => {
+    const newTransaction = req.body;
+    budgetData.push(newTransaction)
+    res.status(202).json(budgetData)
+})
+
 
 module.exports = budget

@@ -4,6 +4,8 @@ const app = express();
 
 const budgetAppController = require('./controllers/budgetAppController')
 
+app.use(express.json())
+
 app.use('/budget', budgetAppController)
 
 app.get('/', (req, res) => {
