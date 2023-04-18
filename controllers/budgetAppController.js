@@ -21,15 +21,26 @@ budget.post('/',(req, res) => {
     res.status(202).json(budgetData)
 })
 
-//Delete -- looking into refactoring with tenary
+//Delete
 budget.delete('/:id', (req, res) => {
-    const {id} = req.params;
+    const {id} = req.params; //--- id can be removed from individual scope and made global
     const removedTransaction = budgetData.splice(id, 1)
     {budgetData[id] ? res.status(202).json(removedTransaction):
     res.status(404).json({error: `Transaction with ID: ${id} Not found.`})
-    }
-    
+    }   
 })
 
+//Put | Update
+budget.put('/:id', (req, res) => {
+    const {id} = req.params;
+    const editTransaction = req.body;
+    if(budgetData[id])  {
+        budgetData[id] = editTransaction 
+        res.status(202).json(budgetData)
+    }else {
+        res.sendStatus(404).json({error: `No Transaction matches the ID: ${id}`})
+    }
+    
+    })
 
 module.exports = budget
