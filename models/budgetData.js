@@ -1,26 +1,29 @@
 module.exports = [
     { 
         id:"unique1",
-        item_name: "expense1",
-        amount: "100",
-        date: "01-23-23",
-        from: "store",
-        category: "spending"
+        item_name: "Dummy_Item_1",
+        type: "debit",
+        amount: 100,
+        date: "2023-01-23",
+        from: "From_1",
+        category: "Category_1"
     },
     { 
         id:"unique2",
-        item_name: "expense2",
-        amount: "200",
-        date: "01-23-23",
-        from: "store",
-        category: "spending"
+        item_name: "Dummy_Item_22",
+        type: "credit",
+        amount: 200,
+        date: "2023-02-14",
+        from: "From_2",
+        category: "Category_2"
     },
     { 
         id:"unique3",
-        item_name: "expense3",
-        amount: "300",
-        date: "01-23-23",
-        from: "store",
-        category: "spending"
+        item_name: "Dummy_Item_3",
+        type: "debit",
+        amount: 300,
+        date: "2023-03-23",
+        from: "From_3",
+        category: "Category_3"
     }
 ]

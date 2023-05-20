@@ -3,11 +3,11 @@ const budget = express.Router();
 
 const budgetData = require('../models/budgetData')
 
-//Get Index
+//Read all | Index
 budget.get('/',(req, res) =>{
     res.status(202).json(budgetData)
 })
-//Get Show 
+//Read single | Show 
 budget.get('/:id', (req, res) => {
     const {id} = req.params
     const transaction = budgetData[id]
@@ -23,7 +23,7 @@ budget.post('/',(req, res) => {
 
 //Delete
 budget.delete('/:id', (req, res) => {
-    const {id} = req.params; //--- id can be removed from individual scope and made global
+    const {id} = req.params;
     const removedTransaction = budgetData.splice(id, 1)
     {budgetData[id] ? res.status(202).json(removedTransaction):
     res.status(404).json({error: `Transaction with ID: ${id} Not found.`})

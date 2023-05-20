@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/keriarmstrong/Budget-App-Backend#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "nodemon": "^2.0.22"
   },
-  "devDependencies": {},
   "keywords": []
 }
