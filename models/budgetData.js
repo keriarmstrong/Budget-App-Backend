@@ -25,5 +25,14 @@ module.exports = [
         date: "2023-03-23",
         from: "From_3",
         category: "Category_3"
+    },
+    { 
+        id:"unique4",
+        item_name: "Dummy_Item_4",
+        type: "credit",
+        amount: 250,
+        date: "2023-04-20",
+        from: "From_4",
+        category: "Category_4"
     }
 ]
