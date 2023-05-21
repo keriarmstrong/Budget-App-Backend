@@ -1,6 +1,6 @@
 module.exports = [
     { 
-        id:"unique1",
+        id:"id-1",
         item_name: "Dummy_Item_1",
         type: "debit",
         amount: 100,
@@ -9,7 +9,7 @@ module.exports = [
         category: "Category_1"
     },
     { 
-        id:"unique2",
+        id:"id-2",
         item_name: "Dummy_Item_22",
         type: "credit",
         amount: 200,
@@ -18,7 +18,7 @@ module.exports = [
         category: "Category_2"
     },
     { 
-        id:"unique3",
+        id:"id-3",
         item_name: "Dummy_Item_3",
         type: "debit",
         amount: 300,
@@ -27,7 +27,7 @@ module.exports = [
         category: "Category_3"
     },
     { 
-        id:"unique4",
+        id:"id-4",
         item_name: "Dummy_Item_4",
         type: "credit",
         amount: 250,
